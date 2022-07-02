@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Wiki-Clone": {
+    "wiki-clone-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Wiki-Clone",
+            "outputPath": "dist/wiki-clone-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Wiki-Clone:build"
+            "browserTarget": "wiki-clone-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Wiki-Clone:build:production"
+              "browserTarget": "wiki-clone-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Wiki-Clone:build"
+            "browserTarget": "wiki-clone-app:build"
           }
         },
         "test": {
@@ -117,19 +117,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Wiki-Clone:serve"
+            "devServerTarget": "wiki-clone-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Wiki-Clone:serve:production"
+              "devServerTarget": "wiki-clone-app:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Wiki-Clone",
+  "defaultProject": "wiki-clone-app",
   "cli": {
-    "analytics": "19b21352-da47-4625-9f68-4b8e12832b80"
+    "analytics": "0e967f23-e273-4e0c-9bae-b434c205d5c7"
   }
 }

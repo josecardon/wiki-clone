@@ -2,7 +2,7 @@
   <mat-form-field class="example-full-width w-100" appearance="outline">
     <mat-label></mat-label>
     <mat-icon matPrefix>search</mat-icon>
-    <input [(ngModel)]="selectedVoice" type="text" matInput placeholder="Buscar">
-    <mat-icon (click)="commandVoice()" [color]="listen" style="cursor: pointer;" matSuffix>keyboard_voice</mat-icon>
+    <input [formControl]="inputSearch" type="text" matInput placeholder="Buscar" >
+    <!-- <mat-icon  style="cursor: pointer;" matSuffix>keyboard_voice</mat-icon> -->
   </mat-form-field>
 </div>

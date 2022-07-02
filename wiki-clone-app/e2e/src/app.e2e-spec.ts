@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Wiki-Clone app is running!');
+    expect(page.getTitleText()).toEqual('wiki-clone-app app is running!');
   });
 
   afterEach(async () => {

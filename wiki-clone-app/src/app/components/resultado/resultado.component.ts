@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-resultado',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resultado.component.less']
 })
 export class ResultadoComponent implements OnInit {
+  @Input() query: string;
 
   constructor() { }
 
   ngOnInit(): void {
+    console.warn('===>' , this.query);
   }
 
 }
