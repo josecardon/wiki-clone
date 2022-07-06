@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { WikiService } from './services/wiki.service';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,15 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class AppComponent {
   title = 'wiki-clone-app';
-  public search!: string;
+  public data: any[] = [];
 
   getSearch(res: any) {
-    this.search = res;
+    this.wikiService.search(res).subscribe(res => {
+        console.log(res);
+
+        this.data = res;
+    });
+
   }
+  constructor(private wikiService: WikiService) { }
 }

@@ -11,6 +11,8 @@ import {MatInputModule} from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { ResultadoComponent } from './components/resultado/resultado.component';
 import { HttpClientModule } from '@angular/common/http';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { NgxCopyPasteModule } from 'ngx-copypaste';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatFormFieldModule,
     MatIconModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxCopyPasteModule,
+    MatTooltipModule
 
   ],
   providers: [],

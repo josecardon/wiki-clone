@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { WikiService } from 'src/app/services/wiki.service';
 
 @Component({
   selector: 'app-resultado',
@@ -6,12 +7,18 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./resultado.component.less']
 })
 export class ResultadoComponent implements OnInit {
-  @Input() query: string;
+  @Input() getData: any[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
-    console.warn('===>' , this.query);
   }
+
+  clickboardCopy(data: any) {
+    data.select();
+    document.execCommand('copy');
+    data.setSelecRange(0, 0);
+  }
+
 
 }

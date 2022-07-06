@@ -1,4 +1,6 @@
-<section class="container">
+<section class="container bg-sections">
+  <h2 class="text-center mt-3 mb-1 title">Wiki-Clone</h2>
   <app-buscador (setSearch)="getSearch($event)"></app-buscador>
+  <app-resultado [getData]="data"></app-resultado>
 </section>
-<app-resultado [query]="search"></app-resultado>
+

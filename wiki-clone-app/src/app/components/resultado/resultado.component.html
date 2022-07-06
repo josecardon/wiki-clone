@@ -1,1 +1,20 @@
-<p>resultado works!</p>
+<!-- <h2>Resultado {{query}}</h2> -->
+
+  <section class="container" *ngFor="let article of getData">
+    <article class="article">
+      <a class="color-article" href="'https://en.wikipedia.org/wiki/' + article.title" target="_blank">
+        {{article.title}}
+      </a>
+      <div class="content">
+        <p ngxCopyPaste #cp="copy" [innerHtml]="article.snippet">
+          {{article.snippet}}
+        </p>
+        <i (click)="cp.copy()" mat-raised-button
+        matTooltip="Copiar">
+          <mat-icon class="color-icon">
+            content_copy
+          </mat-icon>
+        </i>
+      </div>
+    </article>
+  </section>

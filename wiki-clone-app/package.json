@@ -23,6 +23,7 @@
     "@angular/router": "~10.2.5",
     "@kamiazya/ngx-speech-recognition": "^0.4.3",
     "bootstrap": "^5.1.3",
+    "ngx-copypaste": "^10.0.0",
     "ngx-speech": "0.0.8",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",

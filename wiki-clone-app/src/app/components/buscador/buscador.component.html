@@ -1,8 +1,9 @@
-<div class="text-center mt-5">
+<div class="">
   <mat-form-field class="example-full-width w-100" appearance="outline">
     <mat-label></mat-label>
-    <mat-icon matPrefix>search</mat-icon>
-    <input [formControl]="inputSearch" type="text" matInput placeholder="Buscar" >
-    <!-- <mat-icon  style="cursor: pointer;" matSuffix>keyboard_voice</mat-icon> -->
+    <input  type="text" matInput placeholder="Buscar" [formControl]="inputSearch">
+    <mat-icon matSuffix>search</mat-icon>
+    <!-- <mat-icon (click)="startService()" [color]="listen"  style="cursor: pointer;" matSuffix>keyboard_voice</mat-icon> -->
   </mat-form-field>
 </div>
+

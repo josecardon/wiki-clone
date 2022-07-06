@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  END_POINT: 'https://en.wikipedia.org/w/api.php?'
+  END_POINT: 'https://es.wikipedia.org/w/api.php?'
 };
 
 /*
